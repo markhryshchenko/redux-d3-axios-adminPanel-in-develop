@@ -28,9 +28,8 @@
 
 /*.main-box{
     background-color: #F7F7F7;
-
-     height: calc(100vh - 60px); 
-}*/
+ }   
+     height: calc(100vh - 60px); */
 .header {
   background-color: #EDEDED;
   border-bottom: 1px solid rgba(0, 0, 0, 0.103);

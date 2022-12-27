@@ -1,11 +1,16 @@
-import MainBox from "./main-box/MainBox";
+/* import MainBox from "./main-box/MainBox";
 import MenuBox from "./menu-box/MenuBox";
-import '../App.css';
+import '../App.css'; */
+
+import Header from "../header/Header";
+import MenuBox from "../menu-box/MenuBox";
 
 export default function Users() {
   return (
     <div className="App">
-    <h1>Users</h1>
+      <MenuBox />
+      <Header />
+      <h1>Users</h1>
     </div>
   );
 }

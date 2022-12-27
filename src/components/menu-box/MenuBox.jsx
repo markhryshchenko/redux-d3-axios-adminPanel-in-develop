@@ -15,7 +15,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import LocalAtmIcon from "@mui/icons-material/LocalAtm";
 import GroupIcon from "@mui/icons-material/Group";
 import BarChartIcon from "@mui/icons-material/BarChart";
-
+import { Link } from "react-router-dom";
 function MenuBox() {
   const [open, setOpen] = React.useState(true);
   const handleClick = () => {
@@ -53,55 +53,61 @@ function MenuBox() {
           component="nav"
           aria-labelledby="nested-list-subheader"
         >
-          <ListItemButton>
-            <ListItemIcon >
-              <HomeIcon sx={{ color: '#fdfdfd' }}/>
-            </ListItemIcon>
-            <ListItemText primary="Home" />
-            <ExpandMore />
-          </ListItemButton>
-
-          <ListItemButton>
-            <ListItemIcon>
-              <LocalAtmIcon sx={{ color: '#fdfdfd' }} />
-            </ListItemIcon>
-            <ListItemText primary="Salary" />
-            <ExpandMore />
-          </ListItemButton>
-
-          <ListItemButton>
-            <ListItemIcon>
-              <GroupIcon sx={{ color: '#fdfdfd' }}/>
-            </ListItemIcon>
-            <ListItemText primary="Users" />
-            <ExpandMore />
-          </ListItemButton>
-
-          <ListItemButton>
-            <ListItemIcon>
-              <BarChartIcon sx={{ color: '#fdfdfd' }}/>
-            </ListItemIcon>
-            <ListItemText primary="Data presentation" />
-            <ExpandMore />
-          </ListItemButton>
-
-          <ListItemButton onClick={handleClick}>
-            <ListItemIcon>
-              <InboxIcon sx={{ color: '#fdfdfd' }}/>
-            </ListItemIcon>
-            <ListItemText primary="Inbox" />
-            {open ? <ExpandLess /> : <ExpandMore />}
-          </ListItemButton>
-          <Collapse in={open} timeout="auto" unmountOnExit>
+          <Link to="/">
+            <ListItemButton>
+              <ListItemIcon>
+                <HomeIcon sx={{ color: "#fdfdfd" }} />
+              </ListItemIcon>
+              <ListItemText primary="Home" />
+              <ExpandMore />
+            </ListItemButton>
+          </Link>
+          <Link to="/salary">
+            <ListItemButton>
+              <ListItemIcon>
+                <LocalAtmIcon sx={{ color: "#fdfdfd" }} />
+              </ListItemIcon>
+              <ListItemText primary="Salary" />
+              <ExpandMore />
+            </ListItemButton>
+          </Link>
+          <Link to="/users">
+            <ListItemButton>
+              <ListItemIcon>
+                <GroupIcon sx={{ color: "#fdfdfd" }} />
+              </ListItemIcon>
+              <ListItemText primary="Users" />
+              <ExpandMore />
+            </ListItemButton>
+          </Link>
+          <Link to="/dataPresentation">
+            <ListItemButton>
+              <ListItemIcon>
+                <BarChartIcon sx={{ color: "#fdfdfd" }} />
+              </ListItemIcon>
+              <ListItemText primary="Data presentation" />
+              <ExpandMore />
+            </ListItemButton>
+          </Link>
+          <Link to="/inbox">
+            <ListItemButton onClick={handleClick}>
+              <ListItemIcon>
+                <InboxIcon sx={{ color: "#fdfdfd" }} />
+              </ListItemIcon>
+              <ListItemText primary="Inbox" />
+              {open ? <ExpandLess /> : <ExpandMore />}
+            </ListItemButton>
+          </Link>
+          {/* <Collapse in={open} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
               <ListItemButton sx={{ pl: 4 }}>
                 <ListItemIcon>
-                  <StarBorder sx={{ color: '#fdfdfd' }} />
+                  <StarBorder sx={{ color: "#fdfdfd" }} />
                 </ListItemIcon>
                 <ListItemText primary="Starred" />
               </ListItemButton>
             </List>
-          </Collapse>
+          </Collapse> */}
         </List>
       </div>
     </div>
