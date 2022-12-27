@@ -1,0 +1,28 @@
+.menu-box{
+    background-color: #2A3F54;
+    border: #2A3F54 1px solid;
+    width: 230px;
+    float: left;
+    height: 100vh;
+    color: #ECF0F1;
+    padding: 1rem 0;
+    &__title {
+        font-size: 24px;
+       
+    }
+}
+.greeting-box{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 2rem 0 1rem 0;
+    &__avatar{
+        margin-right: 0.5rem;
+    }
+}
+.nav-menu {
+    color: #fdfdfd;
+    background-color: #2A3F54;
+  
+  
+}

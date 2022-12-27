@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+.menu-box {
+  background-color: #2A3F54;
+  border: #2A3F54 1px solid;
+  width: 230px;
+  float: left;
+  height: 100vh;
+  color: #ECF0F1;
+  padding: 1rem 0;
+}
+.menu-box__title {
+  font-size: 24px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.greeting-box {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: 2rem 0 1rem 0;
+}
+.greeting-box__avatar {
+  margin-right: 0.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-menu {
+  color: #fdfdfd;
+  background-color: #2A3F54;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*.main-box{
+    background-color: #F7F7F7;
+
+     height: calc(100vh - 60px); 
+}*/
+.header {
+  background-color: #EDEDED;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+  padding-left: 5.5rem;
+  font-family: "Roboto";
 }
+
+/* @import "PageNotFound/PageNotFound"; *//*# sourceMappingURL=App.css.map */
