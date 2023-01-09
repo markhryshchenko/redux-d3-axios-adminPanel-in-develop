@@ -1,3 +1,10 @@
+import axios from "axios";
+const apiUrl = "https://jsonplaceholder.typicode.com/users";
+
+export async function getUsers() {
+  const response = await axios.get(`${apiUrl}`);
+  return response.data;
+}
 /* import axios from "axios";
 
 const apiUrl = "http://localhost:5000";
